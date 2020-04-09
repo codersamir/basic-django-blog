@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-Hello world
+<br>
+<br>
+<br>
+<div class="container">
+    <h1>{{post.title}}</h1>
+    <p class="lead">{{post.date_added}}</p>
+    <img src="{{post.image.url}}" width="400" alt="{{post.title}}">
+    <div>
+        {{post.content}}
+    </div>
+</div>
+
 {% endblock content %}
 
 {% block title %}
 Detail page
+
 {% endblock title %}
