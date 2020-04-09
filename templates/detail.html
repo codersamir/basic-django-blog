@@ -9,7 +9,7 @@
     <p class="lead">{{post.date_added}}</p>
     <img src="{{post.image.url}}" width="400" alt="{{post.title}}">
     <div>
-        {{post.content}}
+        {{post.content|safe}}
     </div>
 </div>
 
